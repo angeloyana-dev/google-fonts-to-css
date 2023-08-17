@@ -1,0 +1,17 @@
+{
+  "name": "google-fonts-to-css",
+  "version": "0.0.1",
+  "description": "Imports downloaded google fonts to css file.",
+  "main": "index.js",
+  "keywords": [],
+  "author": "Angelo Yana",
+  "license": "ISC",
+  "type": "module",
+  "bin": {
+  	"extract-fonts": "./bin/index.js"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "shelljs": "^0.8.5"
+  }
+}
