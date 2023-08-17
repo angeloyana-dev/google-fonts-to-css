@@ -1,10 +1,16 @@
 {
   "name": "google-fonts-to-css",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Imports downloaded google fonts to css file.",
   "main": "./bin/index.js",
   "type": "module",
-  "keywords": ["google-fonts-to-css", "cli", "shell", "extract-fonts", "fonts"],
+  "keywords": [
+    "google-fonts-to-css",
+    "cli",
+    "shell",
+    "extract-fonts",
+    "fonts"
+  ],
   "author": "Angelo Yana",
   "license": "MIT",
   "repository": {
