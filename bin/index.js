@@ -53,6 +53,14 @@ async function openFolder(){
 
 // Goes back to the main directory to create fonts.css later
 async function applyFontToCss(fontFiles, isStatic, fontName){
+	const { stdout: currentFontDir } = await exec("pwd", false)
+	await cd(mainDir)
+	await appendFontToCss(currentFontDir, fontFiles, fontName)
+	await cd(currentFontDir)
+}
+
+// Create fonts.css at main directory of fonts folder, then appends @font-face for each file
+async function appendFontToCss(currentFontDir, fontFiles, fontName){
 	// Temporary
-	console.log({ fontFiles, isStatic, fontName})
+	console.log(currentFontDir, fontFiles, fontName)
 }
