@@ -18,8 +18,6 @@ export async function exec(command, isNotSilent){
 // For change directory
 export async function cd(destination){
 	return await new Promise(resolve => {
-		shell.cd(destination, (code, stdout, stderr) => {
-			resolve({ code, stdout, stderr })
-		})
+		resolve(shell.cd(destination))
 	})
 }
